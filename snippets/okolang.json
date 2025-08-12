@@ -1,0 +1,86 @@
+{
+    "Import Statement": {
+        "prefix": "import",
+        "body": ["import ${1:module};"],
+        "description": "Import a module"
+    },
+    "Return Statement": {
+        "prefix": "return",
+        "body": ["return ${1:value};"],
+        "description": "Return a value from a function"
+    },
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "if (${1:condition}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "If statement"
+    },
+    "Elif Statement": {
+        "prefix": "elif",
+        "body": [
+            "elif (${1:condition}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "Else-if statement"
+    },
+    "Else Statement": {
+        "prefix": "else",
+        "body": [
+            "else {",
+            "    $0",
+            "}"
+        ],
+        "description": "Else statement"
+    },
+    "While Loop": {
+        "prefix": "while",
+        "body": [
+            "while (${1:condition}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "While loop"
+    },
+    "Foreach Loop": {
+        "prefix": "feach",
+        "body": [
+            "feach (${1:element}) (${2:array}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "Foreach loop"
+    },
+    "Function Definition": {
+        "prefix": "funct",
+        "body": [
+            "funct ${1:name}(${2:params}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "Function definition"
+    },
+    "Variable Declaration": {
+        "prefix": ":=",
+        "body": ["${1:varName} := ${2:value};"],
+        "description": "Variable declaration with type inference"
+    },
+    "Variable Assignment": {
+        "prefix": "=",
+        "body": ["${1:varName} = ${2:value};"],
+        "description": "Variable assignment"
+    },
+    "Module Access": {
+        "prefix": "::",
+        "body": ["${1:module}::${2:method}(${3:args})"],
+        "description": "Access a method from a module"
+    },
+    "Print Line": {
+        "prefix": "print",
+        "body": ["io::println(${1:\"message\"});"],
+        "description": "Print a line to the console"
+    }
+}

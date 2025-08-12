@@ -1,0 +1,58 @@
+{
+  "name": "oko-lang-support",
+  "displayName": "oko-lang Support",
+  "description": "Language support for the interpreted, non-esoteric programming language \"oko\" made by tixonochek.",
+  "version": "0.0.1",
+  "publisher": "tixonochek",
+  "icon": "images/fOkoLogo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tixonochekAscended/oko-lang-vscode"
+  },
+  "homepage": "https://github.com/tixonochekAscended/oko-lang-vscode",
+  "bugs": {
+    "url": "https://github.com/tixonochekAscended/oko-lang-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+      "onLanguage:okolang"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "okolang",
+        "aliases": [
+          "oko-lang",
+          "okolang"
+        ],
+        "extensions": [
+          ".oko"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "images/fOkoIcon.svg",
+          "dark": "images/fOkoIcon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "okolang",
+        "scopeName": "source.okolang",
+        "path": "./syntaxes/okolang.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "okolang",
+        "path": "./snippets/okolang.json"
+      }
+    ]
+  }
+}
