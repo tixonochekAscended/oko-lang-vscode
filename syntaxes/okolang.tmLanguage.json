@@ -35,7 +35,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.oko",
-                    "match": "\\b(import|funct|return|while|feach|if|elif|else)\\b"
+                    "match": "\\b(import|fun|return|while|for|if|elif|else)\\b"
                 }
             ]
         },

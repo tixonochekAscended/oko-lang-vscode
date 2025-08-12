@@ -46,18 +46,18 @@
         "description": "While loop"
     },
     "Foreach Loop": {
-        "prefix": "feach",
+        "prefix": "for",
         "body": [
-            "feach (${1:element}) (${2:array}) {",
+            "for (${1:element}) (${2:array}) {",
             "    $0",
             "}"
         ],
         "description": "Foreach loop"
     },
     "Function Definition": {
-        "prefix": "funct",
+        "prefix": "fun",
         "body": [
-            "funct ${1:name}(${2:params}) {",
+            "fun ${1:name}(${2:params}) {",
             "    $0",
             "}"
         ],

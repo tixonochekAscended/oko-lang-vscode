@@ -1,9 +1,8 @@
-# Change Log
+# 📜 Changelog of oko-lang VSCE
 
-All notable changes to the "oko-lang-support" extension will be documented in this file.
+## [v0.0.1]
+- Initial Release
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [v0.0.2]
+- Changed `funct` to `fun`
+- Changed `feach` to `for`
